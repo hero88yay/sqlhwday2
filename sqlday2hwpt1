@@ -1,0 +1,42 @@
+create table Customer(
+       CUSTOMER_ID serial primary key VARCHAR(200),
+       DOB_ INTEGER(200),
+       SSN INTEGER(200),
+       FIRST_NAME VARCHAR(200),
+       LAST_NAME VARCHAR(200),
+       STUDENT_ACC VARCHAR(200),
+       EMAIL_ACC VARCHAR(200),
+       AGE INTEGER(20),
+       GENDER_ VARCHAR(200),
+       VETERAN_ VARCHAR(200),
+       THEATER_MID INTEGER(50),
+);
+ 
+create table Concessions(
+       genre_invoice serial primary key integer(50),
+       fav_movies varchar(200),
+       movie_language varchar(200),
+       most_pur_food varchar(200),
+       items_ordered integer(200),
+       )
+       
+       
+create table Movies(
+       most_watched primary key varchar(200),
+       order_amount integer(50),
+       hours_wacthed integer(200),
+       movie_genre varchar(200),
+       movie_id integer(200),
+       customer_amount integer(200),
+ )
+ 
+ 
+ 
+ create table Tickets(
+       order_amount primary key integer(200),
+       reserved_ticket integer(200),
+       pre_reserved integer(200),
+       price_tickets integer(200),
+       movie_id integer(200),
+       )
+       
